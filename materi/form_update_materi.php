@@ -1,7 +1,7 @@
 
 <?php
-require_once "../layouts/header.php";
 include("../config/config.php");
+require_once "../layouts/header.php";
 
 $id = $_GET['id'];
 // buat query untuk ambil data dari database
@@ -22,28 +22,29 @@ die("data tidak ditemukan...");
                 Form Update Materi
             </div>
             <div class="card-body">
-                    <form action="fungsi_update_materi.php" method="POST" >
+            <form action="fungsi_update_materi.php" method="POST" >
                         <div hidden="True">
                             <label for="id" class="form-label" >ID</label>
-                            <input type="text" class="form-control" id="id" name="id">
+                            <input type="text" class="form-control" id="id" name="id" value="<?= $id; ?>">
                         </div>
                         <div>
                             <label for="pertemuan" class="form-label" >Pertemuan</label>
-                            <input type="text" class="form-control" id="pertemuan" name="pertemuan" ?>">
+                            <input type="text" class="form-control" id="pertemuan" name="pertemuan">
                         </div>
                         <div >
                             <label for="judul" class="form-label" >Judul</label>
-                            <input type="text" class="form-control" id="judul" name="judul_materi" ?>">
+                            <input type="text" class="form-control" id="judul" name="judul_materi">
                         </div>
-                        <div>
+                        <div >
                             <label for="matkul" class="form-label" >Matakuliah</label>
-                            <input type="text" class="form-control" id="matkul" name="matkul" ?>">
-                            </div>
+                            <input type="text" class="form-control" id="matkul" name="matkul">
+                        </div>
                         <div class="mb-3">
                             <label for="isi_materi" class="form-label" >Isi Materi</label>
-                            <input type="text" class="form-control" id="isi_materi" name="isi_materi" ?>">
+                            <input type="text" class="form-control" id="isi_materi" name="isi_materi">
                             </div>
-                            <button type="submit" class="btn btn-primary" name="edit_materi">Simpan</button>   <button type="submit" class="btn btn-danger" name="no_insert">Gajadi</button>
+                            
+                            <button type="submit" class="btn btn-primary" name="edit_materi">Tambah</button>   <button type="submit" class="btn btn-danger" name="no_insert">Gajadi</button>
                     </form>
                 </div>
             </div>

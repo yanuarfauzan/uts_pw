@@ -11,7 +11,7 @@
                     <form action="fungsi_tambah_materi.php" method="POST" >
                         <div hidden="True">
                             <label for="id" class="form-label" >ID</label>
-                            <input type="text" class="form-control" id="id" aria-describedby="emailHelp" name="id">
+                            <input type="text" class="form-control" id="id" name="id">
                         </div>
                         <div>
                             <label for="pertemuan" class="form-label" >Pertemuan</label>
@@ -19,7 +19,11 @@
                         </div>
                         <div >
                             <label for="judul" class="form-label" >Judul</label>
-                            <input type="text" class="form-control" id="judul" aria-describedby="emailHelp" name="judul_materi">
+                            <input type="text" class="form-control" id="judul" name="judul_materi">
+                        </div>
+                        <div >
+                            <label for="matkul" class="form-label" >Matakuliah</label>
+                            <input type="text" class="form-control" id="matkul" name="matkul">
                         </div>
                         <div class="mb-3">
                             <label for="isi_materi" class="form-label" >Isi Materi</label>

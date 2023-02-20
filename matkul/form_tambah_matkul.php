@@ -88,12 +88,12 @@
     <input type="text" class="form-control" id="kodeMatkul" name="kd_matkul">
   </div>
   <div >
-    <label for="exampleInputEmail1" class="form-label" >Mata Kuliah</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="nama_matkul">
+    <label for="nama_matkul" class="form-label" >Mata Kuliah</label>
+    <input type="text" class="form-control" id="nama_matkul" aria-describedby="emailHelp" name="nama_matkul">
   </div>
   <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label" >Deskripsi Mata Kuliah</label>
-    <input type="text" class="form-control" id="exampleInputPassword1" name="desk_matkul">
+    <label for="desk_matkul" class="form-label" >Deskripsi Mata Kuliah</label>
+    <input type="text" class="form-control" id="desk_matkul" name="desk_matkul">
   </div>
   <button type="submit" class="btn btn-primary" name="simpan">Simpan</button>
   <a href="../view/home_matkul.php"><button type="submit" class="btn btn-primary" name="tidak">Gajadi</button></a>
